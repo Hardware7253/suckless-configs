@@ -1,6 +1,7 @@
 //Modify this file to change what commands output to your statusbar, and recompile using the make command.
 static const Block blocks[] = {
 	/*Icon*/	/*Command*/		/*Update Interval*/	/*Update Signal*/
+	{"Bat:", "cat /sys/class/power_supply/BAT0/capacity | sed 's/$/%/'", 30, 0},
 
 	{"Vol:", "amixer -c 1 -M -D pulse get Master | grep -o -E [[:digit:]]+% | head -n -1", 1, 0},
 
