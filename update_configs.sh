@@ -12,7 +12,7 @@ build() {
 copy_config() {
  cd "$path"
  programpath="$srcpath/$program"
- cp "$program/"* "$programpath" 
+ sudo cp "$program/"* "$programpath" 
 }
 
 
