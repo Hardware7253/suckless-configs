@@ -11,7 +11,7 @@ static const char dmenufont[]       = "Ubuntu Mono:style=regular:pixelsize=20:an
 #include "/home/oxnh/.cache/wal/colors-wal-dwm.h"
 
 /* tagging */
-static const char *tags[] = { "G", ":)", "www", ".|", "_>", "{}" };
+static const char *tags[] = { "G", "?", "www", ".|", "_>", "{}" };
 
 static const Rule rules[] = {
 	/* xprop(1):
