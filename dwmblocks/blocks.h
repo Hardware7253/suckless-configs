@@ -1,9 +1,9 @@
 //Modify this file to change what commands output to your statusbar, and recompile using the make command.
 static const Block blocks[] = {
 	/*Icon*/	/*Command*/		/*Update Interval*/	/*Update Signal*/
-	{"Bat:", "cat /sys/class/power_supply/BAT0/capacity | sed 's/$/%/'", 30, 0},
+	{"Bat:", "acpi | cut -c 18-", 30, 0},
 
-	{"Vol:", "amixer -c 1 -M -D pulse get Master | grep -o -E [[:digit:]]+% | head -n -1", 1, 0},
+	{"Vol:", "pamixer --get-volume | sed 's/$/%/'", 1, 0},
 
 	{"Cpu:", "sensors | grep -i 'id' | awk 'NR==1{print $1,$2,$3,$4}' | cut -c  16- ", 15, 0},
 
