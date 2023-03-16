@@ -1,5 +1,24 @@
 #!/bin/bash
 
+read -r -n 1 -p "Setup for high dpi screen [Y/n]: " yn
+yn=${yn:-Y}
+clear
+
+if [ $yn == 'Y' ]; then
+ cd dwm
+ mv config_hdpi.h config.h
+ cd ..
+
+ cd st 
+ mv config_hdpi.h config.h
+ cd ..
+
+ cd dmenu
+ mv config_hdpi.h config.h
+ cd ..
+
+fi
+
 path=$PWD
 
 build() {
