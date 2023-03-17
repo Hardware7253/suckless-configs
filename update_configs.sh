@@ -1,23 +1,25 @@
 #!/bin/bash
 
-read -r -n 1 -p "Setup for high dpi screen [Y/n]: " yn
-yn=${yn:-Y}
-clear
-
-if [ $yn == 'Y' ]; then
+hdpi() {
  cd dwm
  mv config_hdpi.h config.h
  cd ..
-
- cd st 
+ cd st
  mv config_hdpi.h config.h
  cd ..
-
  cd dmenu
  mv config_hdpi.h config.h
  cd ..
+}
 
-fi
+read -r -n 1 -p "$*Setup for high dpi screen? [y/N]: " yn
+yn=${yn:-N}
+case $yn in
+	[Yy]*) hdpi ;;
+	[Nn]*) ;;
+esac
+
+
 
 path=$PWD
 
