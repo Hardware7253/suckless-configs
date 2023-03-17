@@ -13,6 +13,7 @@ hdpi() {
 }
 
 read -r -n 1 -p "$*Setup for high dpi screen? [y/N]: " yn
+clear
 yn=${yn:-N}
 case $yn in
 	[Yy]*) hdpi ;;
