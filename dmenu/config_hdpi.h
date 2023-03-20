@@ -4,7 +4,7 @@
 static int topbar = 0;                      /* -b  option; if 0, dmenu appears at bottom     */
 /* -fn option overrides fonts[0]; default X11 font or font set */
 static const char *fonts[] = {
-	"Hack:style=regular:pixelsize=36:antialias=true:autohint=true"
+	"JetBrains Mono:style=regular:pixelsize=36:antialias=true:autohint=true"
 };
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
 #include "/home/oxnh/.cache/wal/colors-wal-dmenu.h"
