@@ -6,7 +6,7 @@ static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "Hack:style=regular:pixelsize=18:antialias=true:autohint=true" };
-static const char dmenufont[]       = "Hack:style=regular:pixelsize=18:antialias=true:autohint=true"
+static const char dmenufont[]       = "Hack:style=regular:pixelsize=18:antialias=true:autohint=true";
 
 #include "/home/oxnh/.cache/wal/colors-wal-dwm.h"
 
