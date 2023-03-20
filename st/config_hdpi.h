@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Ubuntu Mono:style=regular:pixelsize=36:antialias=true:autohint=true";
+static char *font = "Hack:style=regular:pixelsize=36:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
